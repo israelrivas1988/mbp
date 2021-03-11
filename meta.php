@@ -40,7 +40,7 @@ global $product, $porto_settings;
 	<?php if($sucursal_cotilla >= 0){ ?>
 	<span class="product-stock-sucursal in-stock-sucursal">
 		Sucursal 2	: 
-		<span class="stock-sucursal"><?php if($sucursal_cotilla == 0){ echo ' AGOTADO'; }elseif( $sucursal_cotilla == 1 ){ echo ' DISPONIBLE';  }else{ echo ' DISPONIBLES'; }  ?></span>
+		<span class="stock-sucursal"><?php if($sucursal_cotilla == 0){ echo ' AGOTADO'; }elseif( $sucursal_cotilla == 1 ){ echo ' DISPONIBLE';  }else{ echo ' DISPONIBLE'; }  ?></span>
 	</span>
 	<?php } ?>
 	<?php if ( in_array( 'sku', $porto_settings['product-metas'] ) && wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
